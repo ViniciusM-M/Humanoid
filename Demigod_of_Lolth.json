@@ -1,0 +1,209 @@
+{
+	"siteVersion": "1.182.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMDrow",
+				"abbreviation": "COMDrow",
+				"full": "Community Drow Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2021.10.19",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1690567395,
+		"dateLastModified": 1690567395
+	},
+	"monster": [
+		{
+			"name": "Demigod of Lolth",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"drow"
+				]
+			},
+			"source": "COMDrow",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"spider chitin armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 97
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 18,
+			"wis": 14,
+			"cha": 22,
+			"passive": 16,
+			"cr": "10",
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/r9G4nZu.png",
+			"fluff": {
+				"entries": [
+					"{@link Demigod of Lolth by Umrae-Thara |https://basalt-dnd.tumblr.com/post/182904399532/a-demigod-of-lolth-for-daughterofdungeonbat}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/0USyLv3.png"
+						}
+					}
+				]
+			},
+			"shortName": "Demigod of Lolth",
+			"senses": [
+				"blindsight 90 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Undercommon"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"U"
+			],
+			"save": {
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+10"
+			},
+			"skill": {
+				"insight": "+6",
+				"perception": "+6",
+				"religion": "+8",
+				"stealth": "+7"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The demigod of lolth has advantage on saving throws against being {@condition charmed}, and magic can't put the demigod of lolth to sleep."
+					]
+				},
+				{
+					"name": "Living Shadow",
+					"entries": [
+						"The Demigod of Lolth can use a bonus action to become Invisible when in darkness."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the demigod of lolth has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The demigod of lolth's spellcasting ability is Charisma (spell save {@dc 18}). The demigod of lolth can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell guidance}",
+						"{@spell poison spray}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"4e": [
+							"{@spell cure wounds}"
+						],
+						"3e": [
+							"{@spell conjure animals} (2 giant spider)",
+							"{@spell counterspell}",
+							"{@spell dispel magic}"
+						],
+						"2e": [
+							"{@spell insect plague}",
+							"{@spell mass cure wounds}",
+							"{@spell telekinesis}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Demigod of Loith makes two attacks with their staff."
+					]
+				},
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage, plus 6 ({@damage 1d12}) necrotic damage."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The Demigod, along with any equipment they're wearing or carrying, up to 30 feet to. an unoccupied space they can see."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTagsSpell": [
+				"I",
+				"P"
+			]
+		}
+	]
+}

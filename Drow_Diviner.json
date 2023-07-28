@@ -1,0 +1,235 @@
+{
+	"siteVersion": "1.182.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMDrow",
+				"abbreviation": "COMDrow",
+				"full": "Community Drow Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2021.10.19",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1690567371,
+		"dateLastModified": 1690567371
+	},
+	"monster": [
+		{
+			"name": "Drow Diviner",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"drow"
+				]
+			},
+			"source": "COMDrow",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"breastplate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 0",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 14,
+			"wis": 16,
+			"cha": 14,
+			"passive": 15,
+			"cr": "4",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Elvish",
+				"Undercommon",
+				"Common"
+			],
+			"languageTags": [
+				"E",
+				"U",
+				"C"
+			],
+			"shortName": "Drow Diviner",
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow diviner has advantage on saving throws against being {@condition charmed}, and magic can't put the drow diviner to sleep."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the drow diviner has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow diviner's innate spellcasting ability is Charisma (spell save {@dc 14} +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell dancing lights|PHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness|PHB}",
+							"{@spell faerie fire|PHB}",
+							"{@spell levitate|PHB} (self only)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The drow diviner is a 8th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14} +5 to hit with spell attacks). The drow diviner has the following s prepared:"
+					],
+					"will": [
+						"{@spell guidance|PHB}",
+						"{@spell poison spray|PHB}",
+						"{@spell spare the dying|PHB}",
+						"{@spell thaumaturgy|PHB}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell cure wounds|PHB}",
+								"{@spell detect poison and disease|PHB}",
+								"{@spell ray of sickness|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration|PHB}",
+								"{@spell protection from poison|PHB}",
+								"{@spell web|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure animals|PHB} (1 giant spider)",
+								"{@spell dispel magic|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell divination|PHB}",
+								"{@spell Evard's black tentacles|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"isNpc": false,
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow diviner makes two melee attacks."
+					]
+				},
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, plus 3 ({@damage 1d6}) poison damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"unconscious",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Drow Diviner (The Man Claw Expansion Drow Pack)|https://www.reddit.com/r/UnearthedArcana/comments/4qy9a9/drow_expansion_pack_dd_monsters_of_different/}",
+					"Drow mages are often powerful in the arcane arts. However, many drow spell-weavers specialize in other forms of magic. Diviners are male drow who do not fit the bill for traditional mages, or female drow who wish to avoid the cutthroat power politics of drow society, but still seek to make a name for themselves with other magic. In many ways, they act similarly to priestesses of Lolth, but not wielding the same levels of power; personal or political. With these abilities, other drow seek out diviners as healers or what could pass for sages in their society. That said, diviners tend to have a few highly destructive magic tricks up their sleeves, just in case things do not go their way."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JPTUhlf.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/JPTUhlf.png",
+			"save": {
+				"cha": "+4",
+				"wis": "+6"
+			},
+			"skill": {
+				"insight": "+6",
+				"medicine": "+5",
+				"perception": "+5",
+				"religion": "+4",
+				"stealth": "+3"
+			},
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"I"
+			]
+		}
+	]
+}
